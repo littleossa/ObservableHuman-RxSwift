@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="W3O-DK-eCl">
-                                <rect key="frame" x="32" y="171" width="350.5" height="72"/>
+                                <rect key="frame" x="40" y="171" width="334" height="72"/>
                                 <string key="text" base64-UTF8="YES">
 VGhlIE9ic2VydmFibGUgSHVtYW4REQ1leGFtcGxlA
 </string>
@@ -36,8 +36,9 @@ VGhlIE9ic2VydmFibGUgSHVtYW4REQ1leGFtcGxlA
                         <viewLayoutGuide key="safeArea" id="mb2-yb-rPE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mb2-yb-rPE" firstAttribute="trailing" secondItem="W3O-DK-eCl" secondAttribute="trailing" constant="40" id="VWm-YE-vPY"/>
+                            <constraint firstItem="W3O-DK-eCl" firstAttribute="leading" secondItem="mb2-yb-rPE" secondAttribute="leading" constant="40" id="XjD-0b-2Lc"/>
                             <constraint firstItem="vTv-QY-XnL" firstAttribute="centerX" secondItem="C8M-2u-UPg" secondAttribute="centerX" id="grD-pm-KjG"/>
-                            <constraint firstItem="W3O-DK-eCl" firstAttribute="centerX" secondItem="C8M-2u-UPg" secondAttribute="centerX" id="i5q-0s-f79"/>
                             <constraint firstItem="vTv-QY-XnL" firstAttribute="top" secondItem="W3O-DK-eCl" secondAttribute="bottom" constant="30" id="pNw-rM-wOT"/>
                             <constraint firstItem="vTv-QY-XnL" firstAttribute="centerY" secondItem="C8M-2u-UPg" secondAttribute="centerY" id="v4s-Ym-kDp"/>
                         </constraints>

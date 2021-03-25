@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Observable Human" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="DTJ-2A-Uix">
-                                <rect key="frame" x="31.5" y="197" width="351" height="36"/>
+                                <rect key="frame" x="40" y="197" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -38,11 +38,12 @@
                         <constraints>
                             <constraint firstItem="DYO-po-QQY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F9N-LD-Ykt"/>
                             <constraint firstItem="DYO-po-QQY" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HKp-if-Pze"/>
-                            <constraint firstItem="DTJ-2A-Uix" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IRe-hn-oDu"/>
                             <constraint firstItem="sMs-9K-eQz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JUj-f6-QfD"/>
                             <constraint firstItem="sMs-9K-eQz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MM8-Vv-BOM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DTJ-2A-Uix" secondAttribute="trailing" constant="40" id="Sgr-Pz-rZW"/>
                             <constraint firstItem="sMs-9K-eQz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WPK-eV-Zkf"/>
                             <constraint firstAttribute="bottom" secondItem="sMs-9K-eQz" secondAttribute="bottom" id="bhP-ft-M59"/>
+                            <constraint firstItem="DTJ-2A-Uix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="l8M-eI-ca3"/>
                             <constraint firstItem="DYO-po-QQY" firstAttribute="top" secondItem="DTJ-2A-Uix" secondAttribute="bottom" constant="40" id="qgw-we-Ita"/>
                         </constraints>
                     </view>
