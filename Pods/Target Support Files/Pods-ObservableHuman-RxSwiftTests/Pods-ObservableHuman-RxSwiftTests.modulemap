@@ -1,0 +1,6 @@
+framework module Pods_ObservableHuman_RxSwiftTests {
+  umbrella header "Pods-ObservableHuman-RxSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
