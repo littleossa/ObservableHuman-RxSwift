@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqC-OC-Tzc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="CjJ-pz-fPE">
+            <objects>
+                <viewController id="GqC-OC-Tzc" customClass="ExampleViewController" customModule="ObservableHuman_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C8M-2u-UPg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="裸靴下" translatesAutoresizingMaskIntoConstraints="NO" id="vTv-QY-XnL">
+                                <rect key="frame" x="72" y="273" width="270" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="RQO-OW-SCU"/>
+                                    <constraint firstAttribute="width" constant="270" id="Zeq-wD-Agh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="W3O-DK-eCl">
+                                <rect key="frame" x="32" y="171" width="350.5" height="72"/>
+                                <string key="text" base64-UTF8="YES">
+VGhlIE9ic2VydmFibGUgSHVtYW4REQ1leGFtcGxlA
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mb2-yb-rPE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTv-QY-XnL" firstAttribute="centerX" secondItem="C8M-2u-UPg" secondAttribute="centerX" id="grD-pm-KjG"/>
+                            <constraint firstItem="W3O-DK-eCl" firstAttribute="centerX" secondItem="C8M-2u-UPg" secondAttribute="centerX" id="i5q-0s-f79"/>
+                            <constraint firstItem="vTv-QY-XnL" firstAttribute="top" secondItem="W3O-DK-eCl" secondAttribute="bottom" constant="30" id="pNw-rM-wOT"/>
+                            <constraint firstItem="vTv-QY-XnL" firstAttribute="centerY" secondItem="C8M-2u-UPg" secondAttribute="centerY" id="v4s-Ym-kDp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRB-aR-Hve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.463768115942031" y="-40.178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="裸靴下" width="834" height="1112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
