@@ -14,7 +14,7 @@ class ExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Hello, The Observable Human!!")
+        print("Hello, Observable Human!!")
         undesiredLogic()
         //        improvedLogic()
     }
