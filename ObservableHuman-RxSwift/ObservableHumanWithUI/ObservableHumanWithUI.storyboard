@@ -19,8 +19,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HBw-dZ-e2V">
                                 <rect key="frame" x="24" y="64" width="327" height="108"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚠️年齢確認：　あなたの年齢を入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-xo-C2G">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚠️年齢認証： あなたの年齢を入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-xo-C2G">
+                                        <rect key="frame" x="5.6666666666666572" y="0.0" width="315.66666666666674" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="こちらには過激な表現が描写されている可能性がある為、２０歳未満の方にはお見せ出来ません" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-Oc-GgR">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="こちらには過激な表現が描写されている可能性がある為、２０歳未満の方はご利用出来ません" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-Oc-GgR">
                                                 <rect key="frame" x="20" y="110" width="293" height="147.33333333333334"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
