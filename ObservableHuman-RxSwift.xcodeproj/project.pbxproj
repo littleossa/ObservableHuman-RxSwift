@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		18C06ECCBD1ACD3655EC907B /* Pods_ObservableHuman_RxSwift_ObservableHuman_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9866D1B9111D505D27269CD /* Pods_ObservableHuman_RxSwift_ObservableHuman_RxSwiftUITests.framework */; };
 		8AA8C21827CA276EA45DCEFE /* Pods_ObservableHuman_RxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB7630CEFB6BE726F74AA73 /* Pods_ObservableHuman_RxSwiftTests.framework */; };
+		9717BEAD260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717BEAC260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard */; };
+		9717BEB2260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717BEB1260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift */; };
 		97520B24260C4ED600E6D9F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97520B23260C4ED600E6D9F8 /* AppDelegate.swift */; };
 		97520B26260C4ED600E6D9F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97520B25260C4ED600E6D9F8 /* SceneDelegate.swift */; };
 		97520B2D260C4ED700E6D9F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97520B2C260C4ED700E6D9F8 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		1F2E29B9BA898454E6D5A257 /* Pods-ObservableHuman-RxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableHuman-RxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-ObservableHuman-RxSwiftTests/Pods-ObservableHuman-RxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		458BD4589D5519CF50FCC3EE /* Pods_ObservableHuman_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservableHuman_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		898B46046B0DAE8CBA8DC521 /* Pods-ObservableHuman-RxSwift-ObservableHuman-RxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableHuman-RxSwift-ObservableHuman-RxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-ObservableHuman-RxSwift-ObservableHuman-RxSwiftUITests/Pods-ObservableHuman-RxSwift-ObservableHuman-RxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9717BEAC260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObservableHumanWithUI.storyboard; sourceTree = "<group>"; };
+		9717BEB1260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableHumanWithUIViewController.swift; sourceTree = "<group>"; };
 		97520B20260C4ED600E6D9F8 /* ObservableHuman-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObservableHuman-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97520B23260C4ED600E6D9F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97520B25260C4ED600E6D9F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9717BEAB260F1ED5009EC6E4 /* ObservableHumanWithUI */ = {
+			isa = PBXGroup;
+			children = (
+				9717BEAC260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard */,
+				9717BEB1260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift */,
+			);
+			path = ObservableHumanWithUI;
+			sourceTree = "<group>";
+		};
 		97520B17260C4ED600E6D9F8 = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +144,10 @@
 			children = (
 				97520B23260C4ED600E6D9F8 /* AppDelegate.swift */,
 				97520B25260C4ED600E6D9F8 /* SceneDelegate.swift */,
-				97520B2C260C4ED700E6D9F8 /* Assets.xcassets */,
 				97520B75260C56F700E6D9F8 /* Example */,
+				9717BEAB260F1ED5009EC6E4 /* ObservableHumanWithUI */,
 				97520B2E260C4ED700E6D9F8 /* LaunchScreen.storyboard */,
+				97520B2C260C4ED700E6D9F8 /* Assets.xcassets */,
 				97520B31260C4ED700E6D9F8 /* Info.plist */,
 			);
 			path = "ObservableHuman-RxSwift";
@@ -287,6 +301,7 @@
 			files = (
 				97520B30260C4ED700E6D9F8 /* LaunchScreen.storyboard in Resources */,
 				97520B2D260C4ED700E6D9F8 /* Assets.xcassets in Resources */,
+				9717BEAD260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard in Resources */,
 				97520B77260C573A00E6D9F8 /* Example.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +450,7 @@
 				97520B24260C4ED600E6D9F8 /* AppDelegate.swift in Sources */,
 				97520B26260C4ED600E6D9F8 /* SceneDelegate.swift in Sources */,
 				97520B7C260C577600E6D9F8 /* ExampleViewController.swift in Sources */,
+				9717BEB2260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
