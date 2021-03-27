@@ -28,14 +28,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iHc-ad-jbA">
                                         <rect key="frame" x="109.33333333333334" y="38" width="108.33333333333334" height="70"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydS-S7-oqw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="bezel" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ydS-S7-oqw">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="pUW-0d-ESv"/>
                                                     <constraint firstAttribute="height" constant="70" id="qIo-mN-HH0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsU-ZQ-mef">
                                                 <rect key="frame" x="78" y="34" width="30.333333333333329" height="36"/>
@@ -155,6 +155,13 @@
                             <constraint firstItem="7Fa-uv-7nZ" firstAttribute="top" secondItem="HBw-dZ-e2V" secondAttribute="bottom" constant="35" id="zL0-Oc-a1Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="ydS-S7-oqw" id="1qN-TF-t7v"/>
+                        <outlet property="clothesControl" destination="j6h-PG-66d" id="d1A-WO-avK"/>
+                        <outlet property="footwearControl" destination="I8e-x5-aob" id="wKI-yP-X5n"/>
+                        <outlet property="humanImage" destination="50r-x4-Plc" id="T8l-v0-FXB"/>
+                        <outlet property="underAgeGateView" destination="3Hs-wa-Ppq" id="5Vi-Op-GXq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWd-Ft-JfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
