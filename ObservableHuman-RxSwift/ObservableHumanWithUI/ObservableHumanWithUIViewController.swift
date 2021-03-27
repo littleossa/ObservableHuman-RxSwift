@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ObservableHumanWithUIViewController: UIViewController {
     
@@ -15,22 +17,18 @@ class ObservableHumanWithUIViewController: UIViewController {
     @IBOutlet weak var humanImage: UIImageView!
     @IBOutlet weak var underAgeGateView: UIView!
     
+    let disposeBag = DisposeBag()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        underAgeGateView.isHidden = true
+        let userIsUnderAge = ageTextField.rx.text.orEmpty.asObservable()
+            .map { Int($0) ?? 0 >= 20 }
+            .bind(to: underAgeGateView.rx.isHidden)
+            .disposed(by: disposeBag)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
