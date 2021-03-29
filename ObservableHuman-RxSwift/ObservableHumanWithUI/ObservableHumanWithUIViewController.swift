@@ -33,6 +33,7 @@ class ObservableHumanWithUIViewController: UIViewController {
                                                      segment2: "網タイツ",
                                                      segment3: "Rx"
             )}
+            .share(replay: 1)
         
         let footwear = clothesControl.rx.value.asObservable()
             .map { UISegmentedControl().selectedTitle(by: $0,
@@ -41,6 +42,7 @@ class ObservableHumanWithUIViewController: UIViewController {
                                                       segment2: "ハイヒール",
                                                       segment3: "Rx"
             )}
+            .share(replay: 1)
         
         let imageName = BehaviorRelay(value: "裸と靴下")
         
