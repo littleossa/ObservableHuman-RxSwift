@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ObservableHumanMVVMViewController: UIViewController {
     
@@ -13,22 +15,37 @@ class ObservableHumanMVVMViewController: UIViewController {
     @IBOutlet weak var clothesControl: UISegmentedControl!
     @IBOutlet weak var footwearControl: UISegmentedControl!
     @IBOutlet weak var humanImage: UIImageView!
+    @IBOutlet weak var underAgeGateView: UIView!
+    
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let viewModel = ObservableHumanMVVMViewModel.init(
+            userAgeString: ageTextField.rx.text.orEmpty.asObservable(),
+            clothesValue: clothesControl.rx.value.asObservable(),
+            footwearValue: footwearControl.rx.value.asObservable()
+        )
+        
+        // MARK: - viewModel's bind result
+        
+        viewModel.userIsUnderAge
+            .bind(to: underAgeGateView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        viewModel.currentlyHumanImage
+            .bind(to: humanImage.rx.image)
+            .disposed(by: disposeBag)
+        
+        // MARK: - Tap Guesture
+        
+        let tapBackground = UITapGestureRecognizer()
+        tapBackground.rx.event
+            .subscribe(onNext: { [weak self] _ in
+                self?.view.endEditing(true)
+            })
+            .disposed(by: disposeBag)
+        view.addGestureRecognizer(tapBackground)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

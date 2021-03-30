@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
 extension UISegmentedControl {
     
-    func selectedTitle(by value: Int, segment0: String, segment1: String, segment2: String, segment3: String) -> String {
+    func selectedTitle(by index: Int, segment0: String, segment1: String, segment2: String, segment3: String) -> String {
         
-        switch value {
+        switch index {
         case 1:
             return segment1
         case 2:
