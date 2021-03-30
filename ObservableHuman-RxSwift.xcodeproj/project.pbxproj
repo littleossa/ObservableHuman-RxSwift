@@ -20,6 +20,8 @@
 		97520B46260C4ED700E6D9F8 /* ObservableHuman_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97520B45260C4ED700E6D9F8 /* ObservableHuman_RxSwiftUITests.swift */; };
 		97520B77260C573A00E6D9F8 /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97520B76260C573A00E6D9F8 /* Example.storyboard */; };
 		97520B7C260C577600E6D9F8 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97520B7B260C577600E6D9F8 /* ExampleViewController.swift */; };
+		9752F2B42613133B0062A3AF /* ObservableHumanMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9752F2B32613133B0062A3AF /* ObservableHumanMVVM.storyboard */; };
+		9752F2B9261313B00062A3AF /* ObservableHumanMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9752F2B8261313B00062A3AF /* ObservableHumanMVVMViewController.swift */; };
 		CE1CC6193BC4AD00D3FD957D /* Pods_ObservableHuman_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458BD4589D5519CF50FCC3EE /* Pods_ObservableHuman_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		97520B47260C4ED700E6D9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97520B76260C573A00E6D9F8 /* Example.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Example.storyboard; sourceTree = "<group>"; };
 		97520B7B260C577600E6D9F8 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		9752F2B32613133B0062A3AF /* ObservableHumanMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObservableHumanMVVM.storyboard; sourceTree = "<group>"; };
+		9752F2B8261313B00062A3AF /* ObservableHumanMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableHumanMVVMViewController.swift; sourceTree = "<group>"; };
 		AE63948B23BD48FB718CDCD9 /* Pods-ObservableHuman-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableHuman-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-ObservableHuman-RxSwift/Pods-ObservableHuman-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		C9866D1B9111D505D27269CD /* Pods_ObservableHuman_RxSwift_ObservableHuman_RxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservableHuman_RxSwift_ObservableHuman_RxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A1EE6EEA0EC4803AE495B2 /* Pods-ObservableHuman-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableHuman-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-ObservableHuman-RxSwift/Pods-ObservableHuman-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				97520B25260C4ED600E6D9F8 /* SceneDelegate.swift */,
 				97520B75260C56F700E6D9F8 /* Example */,
 				9717BEAB260F1ED5009EC6E4 /* ObservableHumanWithUI */,
+				9752F2AA261312CA0062A3AF /* ObservableHumanMVVM */,
 				97520B2E260C4ED700E6D9F8 /* LaunchScreen.storyboard */,
 				97520B2C260C4ED700E6D9F8 /* Assets.xcassets */,
 				97520B31260C4ED700E6D9F8 /* Info.plist */,
@@ -181,6 +186,15 @@
 				97520B7B260C577600E6D9F8 /* ExampleViewController.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		9752F2AA261312CA0062A3AF /* ObservableHumanMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				9752F2B32613133B0062A3AF /* ObservableHumanMVVM.storyboard */,
+				9752F2B8261313B00062A3AF /* ObservableHumanMVVMViewController.swift */,
+			);
+			path = ObservableHumanMVVM;
 			sourceTree = "<group>";
 		};
 		B9FF4E360190E4B93E8FA9C4 /* Frameworks */ = {
@@ -305,6 +319,7 @@
 				97520B30260C4ED700E6D9F8 /* LaunchScreen.storyboard in Resources */,
 				97520B2D260C4ED700E6D9F8 /* Assets.xcassets in Resources */,
 				9717BEAD260F1F15009EC6E4 /* ObservableHumanWithUI.storyboard in Resources */,
+				9752F2B42613133B0062A3AF /* ObservableHumanMVVM.storyboard in Resources */,
 				97520B77260C573A00E6D9F8 /* Example.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +470,7 @@
 				97520B7C260C577600E6D9F8 /* ExampleViewController.swift in Sources */,
 				9717BEB2260F1F2C009EC6E4 /* ObservableHumanWithUIViewController.swift in Sources */,
 				9717BF0426127C17009EC6E4 /* SegumentedControll+.swift in Sources */,
+				9752F2B9261313B00062A3AF /* ObservableHumanMVVMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

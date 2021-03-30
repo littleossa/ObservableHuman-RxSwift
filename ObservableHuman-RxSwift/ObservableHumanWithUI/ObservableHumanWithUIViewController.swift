@@ -23,12 +23,15 @@ class ObservableHumanWithUIViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 年齢認証TextFieldの値を取得し、入力値が20未満かどうかのBool値を返す
         let userIsUnderAge = ageTextField.rx.text.orEmpty.asObservable()
             .map { Int($0) ?? 0 >= 20 }
         
+        // 20未満かどうかのBool値を監視し、変更がある度にunderAgeGateView.rx.isHidenに代入する
         userIsUnderAge.bind(to: underAgeGateView.rx.isHidden)
             .disposed(by: disposeBag)
         
+        // clothes用SegmentedControlの選択された値を監視し、変更があればその値を代入する
         let clothes = clothesControl.rx.value.asObservable()
             .map { UISegmentedControl().selectedTitle(by: $0,
                                                      segment0: "裸",
@@ -38,6 +41,7 @@ class ObservableHumanWithUIViewController: UIViewController {
             )}
             .share(replay: 1)
         
+        // footwear用SegmentedControlの選択された値を監視し、変更があればその値を代入する
         let footwear = footwearControl.rx.value.asObservable()
             .map { UISegmentedControl().selectedTitle(by: $0,
                                                       segment0: "靴下",
@@ -47,6 +51,9 @@ class ObservableHumanWithUIViewController: UIViewController {
             )}
             .share(replay: 1)
         
+        // 最新のclothesとfootwearの値を取得し、ひとつのStringに結合する
+        // mapオペレーターでUIImageに変換
+        // bindオペレーターで変換したUIImageをhumanImage.rx.imageに代入する
         Observable.combineLatest(clothes, footwear){ clothesValue, footwearValue -> String in
             return clothesValue + "と" + footwearValue
         }
