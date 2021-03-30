@@ -95,7 +95,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="裸靴下" translatesAutoresizingMaskIntoConstraints="NO" id="50r-x4-Plc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="裸と靴下" translatesAutoresizingMaskIntoConstraints="NO" id="50r-x4-Plc">
                                         <rect key="frame" x="7.6666666666666856" y="173.66666666666669" width="270" height="350.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="270" id="BS6-K2-ce9"/>
@@ -169,7 +169,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="裸靴下" width="834" height="1112"/>
+        <image name="裸と靴下" width="834" height="1112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
