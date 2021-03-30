@@ -26,6 +26,9 @@ class ObservableHumanWithUIViewController: UIViewController {
         let userIsUnderAge = ageTextField.rx.text.orEmpty.asObservable()
             .map { Int($0) ?? 0 >= 20 }
         
+        userIsUnderAge.bind(to: underAgeGateView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
         let clothes = clothesControl.rx.value.asObservable()
             .map { UISegmentedControl().selectedTitle(by: $0,
                                                      segment0: "裸",
@@ -35,7 +38,7 @@ class ObservableHumanWithUIViewController: UIViewController {
             )}
             .share(replay: 1)
         
-        let footwear = clothesControl.rx.value.asObservable()
+        let footwear = footwearControl.rx.value.asObservable()
             .map { UISegmentedControl().selectedTitle(by: $0,
                                                       segment0: "靴下",
                                                       segment1: "裸足",
@@ -44,21 +47,11 @@ class ObservableHumanWithUIViewController: UIViewController {
             )}
             .share(replay: 1)
         
-        let imageName = BehaviorRelay(value: "裸と靴下")
-        
-        imageName.map { UIImage(named: $0) }
-            .bind(to: humanImage.rx.image)
-            .disposed(by: disposeBag)
-        
-        userIsUnderAge.bind(to: underAgeGateView.rx.isHidden)
-            .disposed(by: disposeBag)
-        
         Observable.combineLatest(clothes, footwear){ clothesValue, footwearValue -> String in
-            clothesValue + "と" + footwearValue
+            return clothesValue + "と" + footwearValue
         }
-        .subscribe {
-            imageName.accept($0)
-        }
+        .map { UIImage(named: $0) }
+        .bind(to: humanImage.rx.image)
         .disposed(by: disposeBag)
     }
 }
