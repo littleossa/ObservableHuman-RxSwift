@@ -22,7 +22,7 @@ class ObservableHumanWithUIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // 年齢認証TextFieldの値を取得し、入力値が20未満かどうかのBool値を返す
         let userIsUnderAge = ageTextField.rx.text.orEmpty.asObservable()
             .map { Int($0) ?? 0 >= 20 }
@@ -33,21 +33,21 @@ class ObservableHumanWithUIViewController: UIViewController {
         
         // clothes用SegmentedControlの選択された値を監視し、変更があればその値を代入する
         let clothes = clothesControl.rx.value.asObservable()
-            .map { UISegmentedControl().selectedTitle(by: $0,
-                                                     segment0: "裸",
-                                                     segment1: "服",
-                                                     segment2: "網タイツ",
-                                                     segment3: "Rx"
+            .map { self.selectedTitle(by: $0,
+                                      segment0: "裸",
+                                      segment1: "服",
+                                      segment2: "網タイツ",
+                                      segment3: "Rx"
             )}
             .share(replay: 1)
         
         // footwear用SegmentedControlの選択された値を監視し、変更があればその値を代入する
         let footwear = footwearControl.rx.value.asObservable()
-            .map { UISegmentedControl().selectedTitle(by: $0,
-                                                      segment0: "靴下",
-                                                      segment1: "裸足",
-                                                      segment2: "ハイヒール",
-                                                      segment3: "Rx"
+            .map { self.selectedTitle(by: $0,
+                                      segment0: "靴下",
+                                      segment1: "裸足",
+                                      segment2: "ハイヒール",
+                                      segment3: "Rx"
             )}
             .share(replay: 1)
         
@@ -60,5 +60,19 @@ class ObservableHumanWithUIViewController: UIViewController {
         .map { UIImage(named: $0) }
         .bind(to: humanImage.rx.image)
         .disposed(by: disposeBag)
+    }
+    
+    private func selectedTitle(by index: Int, segment0: String, segment1: String, segment2: String, segment3: String) -> String {
+        
+        switch index {
+        case 1:
+            return segment1
+        case 2:
+            return segment2
+        case 3:
+            return segment3
+        default:
+            return segment0
+        }
     }
 }

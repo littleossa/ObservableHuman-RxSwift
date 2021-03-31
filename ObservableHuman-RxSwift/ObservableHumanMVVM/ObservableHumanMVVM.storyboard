@@ -160,7 +160,7 @@
                         <outlet property="clothesControl" destination="LGr-Cz-nrN" id="AgB-O7-tXE"/>
                         <outlet property="footwearControl" destination="sgU-dp-138" id="8Ep-Dm-BSR"/>
                         <outlet property="humanImage" destination="esb-L3-jcp" id="l4A-6c-skD"/>
-                        <outlet property="underAgeGateView" destination="v8N-G5-TdA" id="jOB-tL-nzt"/>
+                        <outlet property="underAgeGateView" destination="SVT-Dw-GGt" id="f0s-pn-93z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSS-Dc-KXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
