@@ -1,7 +1,9 @@
 # ObservableHuman-RxSwift
-RxSwift学習の為に公式ドキュメント内Examples "<b>ReactiveValues</b>"の章の内容を自分なりに噛み砕いて作成した学習用サンプル
+おじさんの格好をリアクティブに変更できる誰得アプリ
 
-コードのみの挙動を確認できるExampleと、
+RxSwift学習の為に公式ドキュメント内Examples "<b>ReactiveValues</b>"の章の内容を自分なりに噛み砕いて作成した学習用サンプルになります。
+
+プロジェクト内にRxswift例題コードのみの挙動を確認できるExampleと、
 
 UIと結び付けを行ったObservableHumanWithUIと、
 
