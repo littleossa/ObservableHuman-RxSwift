@@ -1,5 +1,5 @@
 # ObservableHuman-RxSwift
-RxSwift公式ドキュメント内Examples "<b>ReactiveValues</b>"の章の内容を自分なりに噛み砕いて作成した学習用サンプル
+RxSwift学習の為に公式ドキュメント内Examples "<b>ReactiveValues</b>"の章の内容を自分なりに噛み砕いて作成した学習用サンプル
 
 コードのみの挙動を確認できるExampleと、
 
